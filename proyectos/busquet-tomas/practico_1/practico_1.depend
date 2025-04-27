@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1742253257 source:/data/uni/UTN/progra_1/practico_1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

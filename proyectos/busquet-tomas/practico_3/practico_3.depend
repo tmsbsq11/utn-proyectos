@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1740020009 source:/data/uni/UTN/progra_1/practico_3/pila.c
+	"pila.h"
+
+1740020011 /data/uni/UTN/progra_1/practico_3/pila.h
+	<stdio.h>
+	<malloc.h>
+
+1743119065 source:/data/uni/UTN/progra_1/practico_3/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<ncurses.h>
+	"pila.h"
+
