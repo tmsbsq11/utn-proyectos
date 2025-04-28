@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1740355814 source:c:\users\gram\desktop\facu\funciones_pilas\pila.c
+	"pila.h"
+
+1740355814 c:\users\gram\desktop\facu\funciones_pilas\pila.h
+	<stdio.h>
+	<malloc.h>
+
+1742425703 source:c:\users\gram\desktop\facu\funciones_pilas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pila.h"
+	<time.h>
+
+1740355814 source:c:\dev\programacion i\funciones_con_pilas\pila.c
+	"pila.h"
+
+1740355814 c:\dev\programacion i\funciones_con_pilas\pila.h
+	<stdio.h>
+	<malloc.h>
+
+1743031405 source:c:\dev\programacion i\funciones_con_pilas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pila.h"
+	<time.h>
+	<conio.h>
+

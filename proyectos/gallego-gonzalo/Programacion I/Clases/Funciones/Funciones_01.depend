@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1741825413 source:d:\gallego_gonzalo\funciones_01\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1742080260 source:c:\users\gram\desktop\facu\funciones_01\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

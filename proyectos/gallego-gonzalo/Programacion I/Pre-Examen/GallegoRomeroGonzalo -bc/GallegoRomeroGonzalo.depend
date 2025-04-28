@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1744851041 source:c:\dev\programacion i\gallegoromerogonzalo\gallegoromerogonzalo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pila.h"
+	<time.h>
+
+1740355574 c:\dev\programacion i\gallegoromerogonzalo\gallegoromerogonzalo\pila.h
+	<stdio.h>
+	<malloc.h>
+
+1740355574 source:c:\dev\programacion i\gallegoromerogonzalo\gallegoromerogonzalo\pila.c
+	"pila.h"
+

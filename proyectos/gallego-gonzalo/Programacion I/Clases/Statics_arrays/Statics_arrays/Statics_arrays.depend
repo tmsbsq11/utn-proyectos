@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1744063806 source:c:\dev\programacion i\statics_arrays\statics_arrays\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<ctype.h>
+	"pila.h"
+	<string.h>
+
+1740355574 source:c:\dev\programacion i\statics_arrays\statics_arrays\pila.c
+	"pila.h"
+
+1740355574 c:\dev\programacion i\statics_arrays\statics_arrays\pila.h
+	<stdio.h>
+	<malloc.h>
+
