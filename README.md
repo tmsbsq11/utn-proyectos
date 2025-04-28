@@ -79,7 +79,7 @@ git pull origin main
 Baja los cambios más recientes desde GitHub a tu computadora.
 
 
-## Consejos
+## 
 
 - **No borres ni modifiques las carpetas de los demás**. Cada uno tiene su propia carpeta.
 - Usa siempre tu carpeta para tus proyectos y no pongas los archivos de otros en la tuya.
