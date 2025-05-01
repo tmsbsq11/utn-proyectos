@@ -16,6 +16,7 @@ void arrAlumno(stAlumno*, int, int*);
 char genero();
 int matricula();
 stAlumno crearAlumno();
+void buscarAlumno(stAlumno*, int, int);
 
 
 int main()
@@ -26,38 +27,39 @@ int main()
 
 void menu(){
     char opt = 0;
+    opt = getch();
+    stAlumno Salon[30];
+    int tam = sizeof(Salon)/ sizeof(Salon[0]);
+    int Salonval = 0;
 
     printf("Seleccione ejercicio a revisar..\n");
-    opt = getch();
 
     switch(opt){
         case '1':{
-            stAlumno Salon[30];
-            int tam = sizeof(Salon)/ sizeof(Salon[0]);
-            int Salonval = 0;
-            system("cls");
-            printf("Carge en un array hasta 30 Alumnos..\n\n");
-            system("pause");
             arrAlumno(&Salon, tam, &Salonval);
             for(int i=0; i<Salonval; i++){ mostrarAlumno(Salon[i]); }
-
-            break;
+        break;
         }
         case '2': {
-            stAlumno Gonzalo;
-            Gonzalo = crearAlumno();
-            mostrarAlumno(Gonzalo);
+            int bus;
+            system("cls");
+            printf("Ingrese matricula a buscar: \n");
+            scanf("%d", &bus);
+
+            buscarAlumno(&Salon, Salonval, bus);
         break;}
     }
 }
 void arrAlumno(stAlumno *arr, int tam, int *val){
     char tecla = 0;
+
+    printf("Carge en un array hasta 30 Alumnos..\n\n");
     while(tecla != ESC && *val < tam){
-        system("cls");
         arr[*val] = crearAlumno();
         (*val)++;
         printf("Desea continuar?. ESC para salir\n");
         tecla = getch();
+        system("cls");
     }
 }
 void mostrarAlumno(stAlumno Alumno){
@@ -96,6 +98,15 @@ int matricula(){
         }
     }
     return mat;
+}
+
+void buscarAlumno(stAlumno *arr, int v, int bus){
+    for(int i=0; i< v; i++){
+        if(bus == arr[i].matricula){
+            mostrarAlumno(arr[i]);
+        }
+        else { printf("Alumno inexistente.\n"); }
+    }
 }
 
 char genero(){
