@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1745983327 source:d:\proyectos\utn-proyectos\proyectos\gallego-gonzalo\programacion i\clases\structs\main.c
+1746110178 source:d:\proyectos\utn-proyectos\proyectos\gallego-gonzalo\programacion i\clases\structs\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+	<ctype.h>
 

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #define ESC 27
 
 typedef struct{
@@ -12,6 +13,8 @@ typedef struct{
 void menu();
 void mostrarAlumno(stAlumno);
 void arrAlumno(stAlumno*, int, int*);
+char genero();
+int matricula();
 stAlumno crearAlumno();
 
 
@@ -22,7 +25,7 @@ int main()
 }
 
 void menu(){
-    char opt = '1';
+    char opt = 0;
 
     printf("Seleccione ejercicio a revisar..\n");
     opt = getch();
@@ -40,6 +43,11 @@ void menu(){
 
             break;
         }
+        case '2': {
+            stAlumno Gonzalo;
+            Gonzalo = crearAlumno();
+            mostrarAlumno(Gonzalo);
+        break;}
     }
 }
 void arrAlumno(stAlumno *arr, int tam, int *val){
@@ -63,14 +71,47 @@ void mostrarAlumno(stAlumno Alumno){
 stAlumno crearAlumno(){
     stAlumno Alumno;
 
-    printf("Nombre..\n");
+
+    printf("Nombre:\n");
     fflush(stdin);
     gets(Alumno.nombre);
-    printf("Genero..\n");
-    fflush(stdin);
-    scanf("%c", &Alumno.genero);
-    printf("matricula..\n");
-    scanf("%d", &Alumno.matricula);
+
+    Alumno.genero = genero();
+    Alumno.matricula = matricula();
+
 
     return Alumno;
+}
+int matricula(){
+    int mat = 0;
+
+    while(!mat){
+        int aux = 0;
+        printf("Matricula:\n");
+        if(scanf("%d", &aux) && aux < 1000000){ mat = aux; }
+        else {
+            fflush(stdin);
+            system("cls");
+            printf("Error, ingrese nuevamente.\n\n");
+        }
+    }
+    return mat;
+}
+
+char genero(){
+    char g;
+    int fGen = 0;
+
+    while(!fGen){
+        printf("Genero(M/F):\n");
+        g = getch();
+        if(toupper(g) == 77 || toupper(g) == 70){
+            fGen = 1;
+        } else {
+            fflush(stdin);
+            system("cls");
+            printf("Opcion incorrecta, ingrese nuevamente.\n");
+        }
+    }
+    return g;
 }
