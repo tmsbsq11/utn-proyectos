@@ -1,0 +1,69 @@
+# depslib dependency file v1.0
+1743361661 source:c:\users\cristian\desktop\arregloscristian\pila.c
+	"pila.h"
+
+1743361665 c:\users\cristian\desktop\arregloscristian\pila.h
+	<stdio.h>
+	<malloc.h>
+
+1743363292 source:c:\users\cristian\desktop\arregloscristian\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<math.h>
+	<time.h>
+	"pila.h"
+
+1743361662 source:c:\users\windows11\desktop\arregloscristian\pila.c
+	"pila.h"
+
+1743361666 c:\users\windows11\desktop\arregloscristian\pila.h
+	<stdio.h>
+	<malloc.h>
+
+1743361662 source:c:\users\nahuel\desktop\arregloscristian\pila.c
+	"pila.h"
+
+1743361666 c:\users\nahuel\desktop\arregloscristian\pila.h
+	<stdio.h>
+	<malloc.h>
+
+1743698679 source:c:\users\nahuel\desktop\arregloscristian\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<math.h>
+	<time.h>
+	"pila.h"
+
+1743361662 source:c:\users\usuario\desktop\funciones_arreglos\pila.c
+	"pila.h"
+
+1743361666 c:\users\usuario\desktop\funciones_arreglos\pila.h
+	<stdio.h>
+	<malloc.h>
+
+1743720335 source:c:\users\usuario\desktop\funciones_arreglos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<math.h>
+	<time.h>
+	"pila.h"
+
+1743361662 source:c:\users\nahuel\desktop\tecnicatura programación\programación i\5. funciones arreglos\pila.c
+	"pila.h"
+
+1743361666 c:\users\nahuel\desktop\tecnicatura programación\programación i\5. funciones arreglos\pila.h
+	<stdio.h>
+	<malloc.h>
+
+1744166962 source:c:\users\nahuel\desktop\tecnicatura programación\programación i\5. funciones arreglos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<math.h>
+	<time.h>
+	"pila.h"
+

@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1707578122 source:c:\users\nahuel\desktop\tecnicatura programación\programación i\modelos parcial\parcial #1 (preparcial)\pila.c
+	"pila.h"
+
+1707578122 c:\users\nahuel\desktop\tecnicatura programación\programación i\modelos parcial\parcial #1 (preparcial)\pila.h
+	<stdio.h>
+	<malloc.h>
+
+1745518909 source:c:\users\nahuel\desktop\tecnicatura programación\programación i\modelos parcial\parcial #1 (preparcial)\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	<conio.h>
+	"pila.h"
+

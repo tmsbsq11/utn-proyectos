@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1744306848 source:c:\users\nahuel\desktop\tecnicatura programación\programación i\6. matrices\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<conio.h>
+	<time.h>
+

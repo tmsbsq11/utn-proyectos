@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1739832195 source:c:\users\nahuel\desktop\programación\programación_c_nivelatorio\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+

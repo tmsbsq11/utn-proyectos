@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1741912937 source:c:\users\usuario\desktop\elmaspicante\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1741962140 source:c:\users\nahuel\desktop\elmaspicante\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+
+1742181812 source:c:\users\nahuel\desktop\tecnicatura programación\programación i\elmaspicante\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+

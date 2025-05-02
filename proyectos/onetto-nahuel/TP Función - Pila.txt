@@ -1,0 +1,10 @@
+1. Hacer una función que permita ingresar varios elementos a una pila, tanto como quiera el usuario. 
+2. Hacer una función que pase todos los elementos de una pila a otra. 
+3. Hacer una función que pase todos los elementos de una pila a otra, pero conservando el orden. 
+4. Hacer una función que encuentre el menor elemento de una pila y lo retorna. La misma debe eliminar ese dato de la pila.
+5. Hacer una función que pase los elementos de una pila a otra, de manera que se genere una nueva pila ordenada. Usar la función del ejercicio 4. (Ordenamiento por selección)
+6. Hacer una función que inserta en una pila ordenada un nuevo elemento, conservando el orden de ésta. 
+7. Hacer una función que pase los elementos de una pila a otra, de manera que se genere una nueva pila ordenada. Usar la función del ejercicio 6.  (Ordenamiento por inserción)
+8. Hacer una función que sume los dos primeros elementos de una pila (tope y anterior), y retorne la suma,  sin alterar el contenido de la pila. 
+9. Hacer una función que calcule el promedio de los elementos de una pila, para ello hacer también una función que calcule la suma, otra para la cuenta y otra que divida. En total son cuatro funciones, y la función que calcula el promedio invoca a las otras 3.
+10. Hacer una función que reciba una pila con números de un solo dígito (es responsabilidad de quien usa el programa) y que transforme esos dígitos en un número decimal.
