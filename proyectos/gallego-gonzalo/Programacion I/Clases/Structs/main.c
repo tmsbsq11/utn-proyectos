@@ -126,3 +126,4 @@ char genero(){
     }
     return g;
 }
+//Cambio para ejemplo.
