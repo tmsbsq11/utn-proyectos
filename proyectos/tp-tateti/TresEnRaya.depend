@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1746156310 source:c:\users\nahuel\desktop\tecnicatura programación\programación i\tresenraya\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1746230498 source:d:\proyectos\utn-proyectos\proyectos\onetto-nahuel\tresenraya\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<unistd.h>
+
