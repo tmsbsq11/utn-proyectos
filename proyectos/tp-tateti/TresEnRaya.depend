@@ -9,3 +9,9 @@
 	<time.h>
 	<unistd.h>
 
+1746301336 source:d:\proyectos\utn-proyectos\proyectos\tp-tateti\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+

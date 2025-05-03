@@ -29,16 +29,16 @@ void mostrarTablero(char tablero[3][3]) {
         for (int linea = 0; linea < 3; linea++) {
             for (int columna = 0; columna < 3; columna++) {
                 if (linea == 1) {
-                    printf(" %c ", tablero[fila][columna]);
+                    printf("   %c   ", tablero[fila][columna]);
                 } else {
-                    printf("   ");
+                    printf("       ");
                 }
                 if (columna < 2) printf("|");
             }
             printf("\n");
         }
         if (fila < 2) {
-            printf("---+---+---\n");
+            printf("-------+-------+-------\n");
         }
     }
 }
@@ -64,41 +64,45 @@ void ingresarValor(char tablero[3][3]){
 
 }
 void turnoJugador(char tablero[3][3]){
-    int aux;
-    printf("seleccione\n");
-    fflush(stdin);
-    scanf("%d", &aux);
-    int count = 1;
+    int aux, flag = 0;
 
-    for(int i=0; i<3; i++){
-        for(int j=0; j<3; j++){
-                if(count == aux){
-                    if(tablero[i][j] != 120 && tablero[i][j] != 111){
-                        tablero[i][j] = 'x';
+    while(!flag){
+        printf("seleccione\n");
+        fflush(stdin);
+        scanf("%d", &aux);
+        int count = 1;
+
+        for(int i=0; i<3; i++){
+            for(int j=0; j<3; j++){
+                    if(count == aux){
+                        if(tablero[i][j] != 120 && tablero[i][j] != 111){
+                            tablero[i][j] = 'x';
+                            flag = 1;
+                        }
                     }
-                    else {
-                        turnoJugador(tablero);
-                    }
-                }
-                count++;
+                    count++;
+            }
         }
     }
 }
-void turnoMaquina(char tablero[3][3]){ ///Checkear que la maquina pierde turno.
+void turnoMaquina(char tablero[3][3]){ ///fijarse que la maquina aveces pierde turno.
+    int flag = 0;
 
-    int count = 0;
-    int pos = rand()%10;
-        for(int i=0; i<3; i++){
-            for(int j=0; j<3; j++){
-                if(pos == count){
-                    if(tablero[i][j] != 120 && tablero[i][j] != 111){
-                            tablero[i][j] = 'o';
+    while(!flag){
+        int count = 0;
+        int pos = rand()%10;
+            for(int i=0; i<3; i++){
+                for(int j=0; j<3; j++){
+                    if(pos == count){
+                        if(tablero[i][j] != 120 && tablero[i][j] != 111){
+                                tablero[i][j] = 'o';
+                                flag = 1;
+                        }
                     }
-                    else { turnoMaquina(tablero); }
+                    count++;
                 }
-                count++;
             }
-        }
+    }
 }
 
 void checkVictory(char tablero[3][3], char letra){
