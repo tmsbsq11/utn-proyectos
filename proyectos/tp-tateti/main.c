@@ -6,7 +6,7 @@
 void mostrarTablero(char tablero[3][3]);
 void turnoJugador(char tablero[3][3]);
 void turnoMaquina(char tablero[3][3]);
-void checkVictory(char tablero[3][3], char letra);
+int checkVictory(char tablero[3][3], char letra);
 
 int main()
 {
@@ -44,32 +44,36 @@ void mostrarTablero(char tablero[3][3]) {
 }
 
 void ingresarValor(char tablero[3][3]){
-    int tTotal = 0;
-    while(tTotal < 9){
+    int tTotal = 0, vic = 0;
+    while(tTotal < 9 && vic != 1){
 
         turnoJugador(tablero);
+        tTotal++;
         system("cls");
         mostrarTablero(tablero);
-        checkVictory(tablero, 'x');
+        vic = checkVictory(tablero, 'x');
+        if(vic == 1 || tTotal >= 9) { break; }
 
         Sleep(500);
         turnoMaquina(tablero);
+        tTotal++;
         system("cls");
         mostrarTablero(tablero);
-        checkVictory(tablero, 'o');
-
-        tTotal++;
+        vic = checkVictory(tablero, 'o');
     }
-    printf("Empate, juego terminado.\n");
+    if(vic == 1) { printf("Victoria!.\n"); }
+    else { printf("Empate.\n"); }
 
 }
 void turnoJugador(char tablero[3][3]){
-    int aux, flag = 0;
+    int flag = 0;
+    char aux;
 
     while(!flag){
         printf("seleccione\n");
         fflush(stdin);
-        scanf("%d", &aux);
+        aux = getch() - '0'; ///al restarle el ascii de 0 al numero seleccionado en ascii, te queda el mismo numero como si fuera int.
+
         int count = 1;
 
         for(int i=0; i<3; i++){
@@ -105,26 +109,30 @@ void turnoMaquina(char tablero[3][3]){ ///fijarse que la maquina aveces pierde t
     }
 }
 
-void checkVictory(char tablero[3][3], char letra){
-
-    for(int i=0; i<3; i++){ ///Revision horizontal.
-        if(tablero[i][0] == letra && tablero[i][1] == letra && tablero[i][2] == letra) {
-            printf("VICTORIA\n");
-            system("pause");
-        }
+int checkVictory(char tablero[3][3], char letra){ ///Las flag estan para que en caso de doble condicion de victoria, solo salte 1.
+    int res = 0, flag = 0;
+    while(!flag){
+        for(int i=0; i<3; i++){
+            if(tablero[i][0] == letra && tablero[i][1] == letra && tablero[i][2] == letra) {
+                res = 1;
+                flag = 1;
+            }
+        }///Revision horizontal.
+        for(int i=0; i<3; i++){
+            if(tablero[0][i] == letra && tablero[1][i] == letra && tablero[2][i] == letra) {
+                res = 1;
+                flag = 1;
+            }
+        }///Revision vertical.
+        if(tablero[0][0] == letra && tablero[1][1] == letra && tablero[2][2] == letra){
+            res = 1;
+            flag = 1;
+        } ///Revision diagonal principal.
+        if(tablero[0][2] == letra && tablero[1][1] == letra && tablero[2][0] == letra){
+            res = 1;
+            flag = 1;
+        } ///Revision diagonal secundaria.
+        flag = 1;
     }
-    for(int i=0; i<3; i++){ ///Revision vertical.
-        if(tablero[0][i] == letra && tablero[1][i] == letra && tablero[2][i] == letra) {
-            printf("VICTORIA\n");
-            system("pause");
-        }
-    }
-    if(tablero[0][0] == letra && tablero[1][1] == letra && tablero[2][2] == letra){
-        printf("VICTORIA\n"); ///Revision diagonal principal.
-        system("pause");
-    }
-    if(tablero[0][2] == letra && tablero[1][1] == letra && tablero[2][0] == letra){
-        printf("VICTORIA\n"); ///Revision diagonal secundaria.
-        system("pause");
-    }
+    return res;
 }
