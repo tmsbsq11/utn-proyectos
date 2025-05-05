@@ -8,7 +8,7 @@ void turnoJugador(char tablero[3][3]);
 void turnoMaquina(char tablero[3][3]);
 int checkVictory(char tablero[3][3], char letra);
 
-int main()
+int main() /// agregar una función que inicialize el menu de selección de jugador e imprima el tablero la primera vez
 {
     srand(time(NULL));
     char tablero[3][3];
@@ -43,7 +43,7 @@ void mostrarTablero(char tablero[3][3]) {
     }
 }
 
-void ingresarValor(char tablero[3][3]){
+void ingresarValor(char tablero[3][3]){ ///agregar un int que recuerde la selección de jugador que se enviara al ser llamada, esa selección decidirá a qué función llamar (máquina o jugador 2)
     int tTotal = 0, vic = 0;
     while(tTotal < 9 && vic != 1){
 
