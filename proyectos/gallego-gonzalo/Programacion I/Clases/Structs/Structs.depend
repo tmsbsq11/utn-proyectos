@@ -1,7 +1,27 @@
 # depslib dependency file v1.0
-1746111164 source:d:\proyectos\utn-proyectos\proyectos\gallego-gonzalo\programacion i\clases\structs\main.c
+1746670296 source:d:\proyectos\utn-proyectos\proyectos\gallego-gonzalo\programacion i\clases\structs\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
+	<conio.h>
+	"stAlumno.h"
+	"func_array.h"
+	"menu.h"
+
+1746667963 d:\proyectos\utn-proyectos\proyectos\gallego-gonzalo\programacion i\clases\structs\stalumno.h
+
+1746667962 source:d:\proyectos\utn-proyectos\proyectos\gallego-gonzalo\programacion i\clases\structs\stalumno.c
+	"stAlumno.h"
+	<stdio.h>
+	<string.h>
+
+1746670123 d:\proyectos\utn-proyectos\proyectos\gallego-gonzalo\programacion i\clases\structs\func_array.h
+	"stAlumno.h"
+
+1746670142 source:d:\proyectos\utn-proyectos\proyectos\gallego-gonzalo\programacion i\clases\structs\func_array.c
+	"func_array.h"
+	"stAlumno.h"
+
+1746670282 d:\proyectos\utn-proyectos\proyectos\gallego-gonzalo\programacion i\clases\structs\menu.h
 
