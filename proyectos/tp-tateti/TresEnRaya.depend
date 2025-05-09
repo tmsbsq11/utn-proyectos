@@ -15,3 +15,32 @@
 	<time.h>
 	<windows.h>
 
+1746739869 source:c:\borrachos\utn-proyectos\proyectos\tp-tateti\main.c
+	<time.h>
+	"tablero.h"
+
+1746741510 source:c:\borrachos\utn-proyectos\proyectos\tp-tateti\tablero.c
+	"tablero.h"
+
+1746739483 c:\borrachos\utn-proyectos\proyectos\tp-tateti\tablero.h
+
+1746748291 c:\borrachos\utn-proyectos\proyectos\tp-tateti\stplayer.h
+
+1746748081 source:c:\borrachos\utn-proyectos\proyectos\tp-tateti\stplayer.c
+	"stPlayer.h"
+
+1746739626 source:c:\borrachos\utn-proyectos\proyectos\tp-tateti\menus.c
+	"menus.h"
+	"tablero.h"
+
+1746739457 c:\borrachos\utn-proyectos\proyectos\tp-tateti\menus.h
+
+1746748315 source:c:\borrachos\utn-proyectos\proyectos\tp-tateti\turnos.c
+	"turnos.h"
+	"stPlayer.h"
+	<stdio.h>
+	<stdlib.h>
+	"stPlayer.h"
+
+1746748323 c:\borrachos\utn-proyectos\proyectos\tp-tateti\turnos.h
+
