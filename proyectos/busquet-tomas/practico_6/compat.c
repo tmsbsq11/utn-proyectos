@@ -30,3 +30,21 @@ char getch(void) {
         system("clear");
     #endif
 }
+void getch_clrsc() {
+    getch();
+    clearsc();
+}
+void limpiarBuffer() {
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
+}
+int leerEntero() {
+    char buffer[20];
+    int num;
+    while (1) {
+        fgets(buffer, sizeof(buffer), stdin);
+        if (sscanf(buffer, "%d", &num) == 1) break;
+        printf("Entrada inválida. Intente de nuevo: ");
+    }
+    return num;
+}
