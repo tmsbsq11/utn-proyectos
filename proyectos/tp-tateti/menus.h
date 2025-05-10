@@ -1,8 +1,9 @@
 #ifndef MENUS_H_INCLUDED
 #define MENUS_H_INCLUDED
 
-int seleccionModo(int select);
-void inicializarApp();
+int seleccionModo();
+void resetApp();
+
 
 
 #endif // MENUS_H_INCLUDED

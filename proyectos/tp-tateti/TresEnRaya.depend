@@ -9,11 +9,9 @@
 	<time.h>
 	<unistd.h>
 
-1746303055 source:d:\proyectos\utn-proyectos\proyectos\tp-tateti\main.c
-	<stdio.h>
-	<stdlib.h>
+1746865139 source:d:\proyectos\utn-proyectos\proyectos\tp-tateti\main.c
 	<time.h>
-	<windows.h>
+	"tablero.h"
 
 1746739869 source:c:\borrachos\utn-proyectos\proyectos\tp-tateti\main.c
 	<time.h>
@@ -43,4 +41,46 @@
 	"stPlayer.h"
 
 1746748323 c:\borrachos\utn-proyectos\proyectos\tp-tateti\turnos.h
+
+1746865139 d:\proyectos\utn-proyectos\proyectos\tp-tateti\tablero.h
+
+1746917029 source:d:\proyectos\utn-proyectos\proyectos\tp-tateti\menus.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"menus.h"
+	"controApp.h"
+
+1746916940 d:\proyectos\utn-proyectos\proyectos\tp-tateti\menus.h
+
+1746865139 source:d:\proyectos\utn-proyectos\proyectos\tp-tateti\stplayer.c
+	"stPlayer.h"
+
+1746915545 d:\proyectos\utn-proyectos\proyectos\tp-tateti\stplayer.h
+
+1746865139 source:d:\proyectos\utn-proyectos\proyectos\tp-tateti\tablero.c
+	"tablero.h"
+
+1746916457 source:d:\proyectos\utn-proyectos\proyectos\tp-tateti\turnos.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
+1746915141 d:\proyectos\utn-proyectos\proyectos\tp-tateti\turnos.h
+
+1746915122 source:d:\proyectos\utn-proyectos\proyectos\tp-tateti\victory.c
+	"victory.h"
+
+1746915139 d:\proyectos\utn-proyectos\proyectos\tp-tateti\victory.h
+
+1746917557 source:d:\proyectos\utn-proyectos\proyectos\tp-tateti\controlapp.c
+	"controApp.h"
+	"turnos.h"
+	"stPlayer.h"
+	"tablero.h"
+	"victory.h"
+	"menus.h"
+
+1746917552 d:\proyectos\utn-proyectos\proyectos\tp-tateti\controapp.h
+	"stPlayer.h"
 

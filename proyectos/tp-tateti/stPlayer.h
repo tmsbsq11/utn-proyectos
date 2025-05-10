@@ -7,9 +7,4 @@ typedef struct{
     int turn;
 }stPlayer;
 
-/*struct stPlayer{
-    char id;
-    char symbol;
-    int turn;
-};*/
 #endif // STPLAYER_H_INCLUDED

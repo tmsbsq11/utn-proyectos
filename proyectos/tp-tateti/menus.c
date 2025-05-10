@@ -1,7 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
 #include "menus.h"
-#include "tablero.h"
+#include "controApp.h"
 
-int seleccionModo(int select){
+int seleccionModo(){
+    system("cls");
+    int select;
     printf("Seleccione modo de juego:\n");
     printf("01 - JvsJ\n");
     printf("02 - JvsCPU\n");
@@ -9,10 +14,10 @@ int seleccionModo(int select){
     system("cls");
     return select;
 }
-void inicializarApp(){
-    char tablero[3][3];
 
-    rellenarTablero(tablero);
-    mostrarTablero(tablero);
-    ingresarValor(tablero);
+void resetApp(){
+    char select = 0;
+    printf("\nRESET? ESC para salir.\n");
+    select = getch();
+    if(select != 27){ inicializarApp(); }
 }
