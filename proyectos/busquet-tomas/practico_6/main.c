@@ -8,18 +8,6 @@
 int main() {
     stAlumno Alumnos[DIM];
     int validos = cargaAlumnos(Alumnos);
-
-    printf("\nLista de alumnos sin ordenar:\n");
-    mostrarArregloAlumnos(Alumnos, validos);
-
-    clearsc();
-    printf("\nBuscar alumno por matricula\n");
-    mostrarAlumnoPorMatricula(Alumnos, validos);
-
-    ordenarPorMatricula(Alumnos, validos);
-    printf("\nLista de alumnos ordenada por matrícula:\n");
-    mostrarArregloAlumnos(Alumnos, validos);
-
+    menuSwitch(Alumnos, validos);
     return 0;
 }
-

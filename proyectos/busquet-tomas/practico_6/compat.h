@@ -3,5 +3,8 @@
 
 char getch(void);
 void clearsc();
+void getch_clrsc();
+void limpiarBuffer();
+int leerEntero();
 
 #endif // COMPAT_H_INCLUDED
