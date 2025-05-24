@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1748054362 source:d:\facultad\programacion i\ta-te-ti\jugador.c
+	"Jugador.h"
+
+1748050291 d:\facultad\programacion i\ta-te-ti\jugador.h
+
+1748052421 source:d:\facultad\programacion i\ta-te-ti\archivos.c
+	<stdio.h>
+	"archivos.h"
+	"Jugador.h"
+
+1748052348 d:\facultad\programacion i\ta-te-ti\archivos.h
+	"Jugador.h"
+
+1748053585 source:d:\facultad\programacion i\ta-te-ti\main.c
+	<stdio.h>
+	<stdlib.h>
+	"archivos.h"
+	"login.h"
+
+1748056042 source:d:\facultad\programacion i\ta-te-ti\login.c
+	<string.h>
+	<stdio.h>
+	"login.h"
+	"Jugador.h"
+	"archivos.h"
+
+1748055080 d:\facultad\programacion i\ta-te-ti\login.h
+	"Jugador.h"
+
