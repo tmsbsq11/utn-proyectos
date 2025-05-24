@@ -1,5 +1,6 @@
 #include <string.h>
 #include <stdio.h>
+#include <conio.h>
 #include "login.h"
 #include "Jugador.h"
 #include "archivos.h"
@@ -12,8 +13,8 @@ void login(){
 
     int login = buscarJugadorLogin(data, vData, aux);
 
-    if(login == 0){ printf("LOGEADO..\n", aux.contra); }
-    else{ printf("ERROR en los datos ingresados..\n", aux.contra); }
+    if(login == 0){ printf("LOGEADO..\n"); }
+    else{ printf("ERROR en los datos ingresados..\n"); }
 }
 
 
@@ -45,14 +46,14 @@ stJugador dataLogin(){
     return aux;
 }
 
-void ocultarPassw(char *pass, int max){
+void ocultarPassw(char *pass, int tmax){
     int i = 0;
     char c;
-    while ((c = getch()) != '\r' && i < max - 1){   //Si lo introducido es diferente que "enter" y menor a 40 caracteres
+    while ((c = getch()) != '\r' && i < tmax - 1){   //Si lo introducido es diferente que "enter" y menor a 40 caracteres
         if(c == '\b'){  //si borras vuelve hacia atras una posicion y "simula" un borrado con \b \b
             i--;
             printf("\b \b");
-        } else {    // si no borraste implanta en caracter en el string y printea un *.
+        } else {    // si no borraste implanta en caracter en el string y printea un *..
             pass[i] = c;
             i++;
             printf("*");

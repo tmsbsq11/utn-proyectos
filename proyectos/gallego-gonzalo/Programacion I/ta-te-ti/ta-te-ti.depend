@@ -18,13 +18,14 @@
 	"archivos.h"
 	"login.h"
 
-1748056042 source:d:\facultad\programacion i\ta-te-ti\login.c
+1748057060 source:d:\facultad\programacion i\ta-te-ti\login.c
 	<string.h>
 	<stdio.h>
+	<conio.h>
 	"login.h"
 	"Jugador.h"
 	"archivos.h"
 
-1748055080 d:\facultad\programacion i\ta-te-ti\login.h
+1748057048 d:\facultad\programacion i\ta-te-ti\login.h
 	"Jugador.h"
 
