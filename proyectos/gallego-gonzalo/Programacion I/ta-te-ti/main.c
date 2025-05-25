@@ -6,10 +6,6 @@
 
 int main()
 {
-    //stJugador data3 = {"Test", "Test", "email", "1234", 'O'};
-
-    cargarArchivo(DATAJ);
-    login();
 
     return 0;
 }
