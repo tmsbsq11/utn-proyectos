@@ -6,15 +6,19 @@
 #include "Jugador.h"
 
 
-void turno(stJugador jugador, int pos, char tablero[3][3]){
-    int count = 1;
+void turnoJugador(stJugador jugador, int pos, char tablero[3][3]){
     int isCPU = 0;
-    int f = 0;
 
     if(pos == -1) {
         isCPU = 1;
-        pedirPosicion(pos, isCPU);
-    }
+        pedirPosicion(isCPU);
+    } else { pos = pedirPosicion(isCPU); }
+
+    buscarPosicion(jugador, pos, tablero, isCPU);
+
+}
+void buscarPosicion(stJugador jugador, int pos, char tablero[3][3], int isCPU){
+    int count = 1, f = 0;
 
     while(!f){
         for(int i=0; i<3; i++){
@@ -23,19 +27,19 @@ void turno(stJugador jugador, int pos, char tablero[3][3]){
                     if(tablero[i][j] == ' '){
                         printf("%c", jugador.figura);
                         f = 1;
-                    } else { pedirPosicion(pos, isCPU); }
+                    } else { pos = pedirPosicion(isCPU); }
                 } else { count++; }
             }
         }
     }
 }
 
-int pedirPosicion(int pos, int isCpu){
-    int f = 0;
+int pedirPosicion(int isCpu){
+    int f = 0, pos;
 
     if(isCpu){ pos = rand()%8+1; }
     else {
-        printf("\nPosicion ocupada, elija nuevamente 1-9 ..\n");
+        printf("\nSeleccione posicion 1-9..\n");
         while(!f){
             scanf("%d", &pos);
             if(pos >48 && pos <58){

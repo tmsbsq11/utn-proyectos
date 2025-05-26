@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "Jugador.h"
 
 void mostrarJugador(stJugador data){

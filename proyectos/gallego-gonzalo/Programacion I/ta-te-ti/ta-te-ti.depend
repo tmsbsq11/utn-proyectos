@@ -12,11 +12,9 @@
 1748052348 d:\facultad\programacion i\ta-te-ti\archivos.h
 	"Jugador.h"
 
-1748203165 source:d:\facultad\programacion i\ta-te-ti\main.c
+1748231390 source:d:\facultad\programacion i\ta-te-ti\main.c
 	<stdio.h>
 	<stdlib.h>
-	"archivos.h"
-	"login.h"
 
 1748057060 source:d:\facultad\programacion i\ta-te-ti\login.c
 	<string.h>
@@ -28,4 +26,70 @@
 
 1748057048 d:\facultad\programacion i\ta-te-ti\login.h
 	"Jugador.h"
+
+1748052421 source:d:\facultad\programacion i\ta-te-ti\librerias\archivos.c
+	<stdio.h>
+	"archivos.h"
+	"Jugador.h"
+
+1748052348 d:\facultad\programacion i\ta-te-ti\librerias\archivos.h
+	"Jugador.h"
+
+1748231507 d:\facultad\programacion i\ta-te-ti\librerias\jugador.h
+
+1748057060 source:d:\facultad\programacion i\ta-te-ti\librerias\login.c
+	<string.h>
+	<stdio.h>
+	<conio.h>
+	"login.h"
+	"Jugador.h"
+	"archivos.h"
+
+1748057048 d:\facultad\programacion i\ta-te-ti\librerias\login.h
+	"Jugador.h"
+
+1748204015 source:d:\facultad\programacion i\ta-te-ti\librerias\turnos.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	"turnos.h"
+	"Jugador.h"
+
+1748232731 d:\facultad\programacion i\ta-te-ti\librerias\turnos.h
+	"Jugador.h"
+
+1748230807 source:d:\facultad\programacion i\ta-te-ti\librerias\jugador.c
+	<stdio.h>
+	"Jugador.h"
+
+1746865139 source:d:\facultad\programacion i\ta-te-ti\librerias\tablero.c
+	"tablero.h"
+
+1746865139 d:\facultad\programacion i\ta-te-ti\librerias\tablero.h
+
+1746915122 source:d:\facultad\programacion i\ta-te-ti\librerias\victory.c
+	"victory.h"
+
+1746915139 d:\facultad\programacion i\ta-te-ti\librerias\victory.h
+
+1746917029 source:d:\facultad\programacion i\ta-te-ti\librerias\menus.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"menus.h"
+	"controApp.h"
+
+1746916940 d:\facultad\programacion i\ta-te-ti\librerias\menus.h
+
+1748231389 d:\facultad\programacion i\ta-te-ti\librerias\controapp.h
+	"Jugador.h"
+
+1748232628 source:d:\facultad\programacion i\ta-te-ti\librerias\controlapp.c
+	"controApp.h"
+	"Jugador.h"
+	"tablero.h"
+	"victory.h"
+	"menus.h"
+	"turnos.h"
 

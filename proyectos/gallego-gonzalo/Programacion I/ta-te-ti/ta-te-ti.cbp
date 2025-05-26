@@ -31,25 +31,41 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="Jugador.c">
+		<Unit filename="librerias/Jugador.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="Jugador.h" />
-		<Unit filename="archivos.c">
+		<Unit filename="librerias/Jugador.h" />
+		<Unit filename="librerias/archivos.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="archivos.h" />
-		<Unit filename="login.c">
+		<Unit filename="librerias/archivos.h" />
+		<Unit filename="librerias/controApp.h" />
+		<Unit filename="librerias/controlApp.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="login.h" />
+		<Unit filename="librerias/login.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="librerias/login.h" />
+		<Unit filename="librerias/menus.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="librerias/menus.h" />
+		<Unit filename="librerias/tablero.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="librerias/tablero.h" />
+		<Unit filename="librerias/turnos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="librerias/turnos.h" />
+		<Unit filename="librerias/victory.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="librerias/victory.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="turnos.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="turnos.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
