@@ -4,7 +4,8 @@
 
 void controlApp(char tablero[3][3]);
 void inicializarApp();
-void JvsCPU(stJugador Player, stJugador CPU, char tablero[3][3]);
-void JvsJ(stJugador Player1, stJugador Player2, char tablero[3][3]);
+void accionesPorTurno(stJugador player, char tablero[3][3], int vic, int isCPU);
+void modoDeJuego(stJugador player1, stJugador player2, char tablero[3][3], int isCPU);
+
 
 #endif // CONTROAPP_H_INCLUDED
